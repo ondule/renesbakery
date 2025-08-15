@@ -1,0 +1,583 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+   html, body {
+    height: 100%;
+    font-size: 100%;
+   }
+
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6,
+   p {
+  
+    margin-bottom: 16px;
+   }
+
+   html:focus-within {
+    scroll-behavior: smooth;
+  } 
+
+   input, button, textarea, select {
+    font: inherit;
+  }
+
+   a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* END BOILERPLATE */
+
+
+
+
+
+@font-face {
+    font-family: 'Kannada';
+    src: url('/fonts/Kannada_MN/KannadaMN-01.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Josefin';
+    src: url('/fonts/Josefin_Slab/JosefinSlab-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bodoni';
+    src: url('/fonts/Bodoni_Moda/BodoniModa-VariableFont_opsz\,wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+  :root {
+    /* COLORS */
+    --rene-blue: #5885C1;
+    --off-white: #FBF7EF;
+    --brownie: #674B41;
+    --secondary-brwn: #4f352b;
+    --accent-yellow: #FFBD59;
+    --text-dark: #3a2115;
+    --text-light: #FBF7EF;
+  }
+
+   @media (max-width: 768px) {
+    header {
+        background-color: var(--rene-blue);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        height: 200px;
+     }
+
+    header h4 {
+        color: var(--text-light);
+        margin-top: -40px;
+        font-size: 11px;
+        font-weight: 80;
+    }
+
+    .logo {
+        height: auto;
+        max-width: 220px;
+        margin-bottom: -10px;
+       
+    }
+
+    .hamburger {
+        width: 36px;
+        position: absolute;
+        right: 4%;
+        top: 2%;
+    }
+
+    h1 {
+        font-family: 'Kannada';
+        color: var(--brownie);
+        text-align: center;
+        font-weight: 100;
+        
+    }
+
+    h2 {
+        font-family: 'Josefin';
+        color: var(--text-dark);
+    }
+
+    p {
+        font-family: "Josefin";
+    }
+
+    .menu-items {
+        font-family: 'Josefin';
+        color: var(--brownie);
+    }
+
+    h4 {
+        font-family: 'Bodoni';
+        font-size: 10px;
+        font-weight: 50;
+        padding-bottom: 10px;
+    }
+
+    body {
+        background-color: var(--off-white);
+    }
+  
+
+    .hero {
+        background-color: var(--off-white);
+        height: 90vh;
+        background-image: url('/images/renes-background-small.png');
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10vh;
+        
+    }
+
+    .textbox {
+        background-color: var(--off-white);
+        height: 50vh;
+        width: 80vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5%;
+    }
+
+    .hero p {
+         font-family: 'Josefin';
+         text-align: center;
+         font-size: 22px;
+         color: var(--brownie);
+    }
+
+    .menu-pastries {
+        background-color: var(--off-white);
+    }
+
+    hr {
+        margin-top: -18px;
+        margin-bottom: 27px;
+        background-color: var(--brownie);
+        border: none;
+        height: 1px;
+    }
+
+    .section-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-bottom: 3vh;
+    }
+
+    .section-title h1 {
+        letter-spacing: 3.6px;
+    }
+
+    .menu-items {
+        margin-bottom: 36px;
+    }
+    .menu-item {
+        margin-bottom: 16px;
+        display: flex;
+    }
+
+    .sub-header {
+        margin-top: 12%;
+    }
+
+    .dots {
+    flex-grow: 1;
+    border-bottom: 1px dotted #999;
+    margin: 0 5px;
+    position: relative;
+    bottom: 5px;
+    }
+    
+
+   
+
+   
+
+    section {
+        padding: 5%;
+        background-color: var(--off-white);
+    }
+
+    .cakes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+    }
+
+    .cakes p {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: var(--secondary-brwn);
+        line-height: 1.5rem;
+        width: 60vw;
+    }
+
+    .anna {
+        margin-top: 5%;
+        font-size: 28px;
+
+    }
+
+    h6 {
+        font-size: 24px;
+        font-family: 'Josefin';
+        color: var(--secondary-brwn);
+    }
+
+    footer {
+        background-color: var(--secondary-brwn);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 8%;
+        padding-top: 15%;
+        color: var(--off-white);
+    }
+
+    h5 {
+        font-family: "Josefin";
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 5vh;
+    }
+
+    .day {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60vw;
+        font-family: 'Josefin';
+        font-size: 20px;
+    }
+    
+    .hours {
+        text-align: center;
+        width: 100px;
+    }
+
+    .shop-hours {
+        margin-bottom: 5vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .logo-footer {
+        width: 30vw;
+        margin:  0 auto;
+    }
+
+
+
+    .phone {
+        margin-bottom: 15vh;
+    }
+
+    .notices {
+        display: flex;
+        justify-content: space-between;
+        width: 90vw;
+        margin-bottom: -35px;
+    }
+
+    .notices p {
+        
+        font-size: 14px;
+    }
+
+    .credit {
+        color: var(--accent-yellow);
+    }
+
+   }
+
+   /* LARGER SCREENS */
+
+   @media (min-width: 768px) {
+        header {
+        background-color: var(--rene-blue);
+        display: flex;
+        align-items: center;
+        height: 20%;
+        padding-left: 3%;
+        /* ^ changed entire section */
+     }
+
+    header h4 {
+        display: none;
+        /* ^changed, deleted styling */
+    }
+
+    .logo {
+        height: auto;
+        max-width: 220px;
+        margin-bottom: -10px;
+       
+    }
+
+    .hamburger {
+        width: 40px;
+        position: absolute;
+        right: 4%;
+        top: 6%;
+    }
+
+    h1 {
+        font-family: 'Kannada';
+        color: var(--brownie);
+        text-align: center;
+        font-weight: 100;
+        
+    }
+
+    h2 {
+        font-family: 'Josefin';
+        color: var(--text-dark);
+    }
+
+    p {
+        font-family: "Josefin";
+    }
+
+    .menu-items {
+        font-family: 'Josefin';
+        color: var(--brownie);
+    }
+
+    h4 {
+        font-family: 'Bodoni';
+        font-size: 10px;
+        font-weight: 50;
+        padding-bottom: 10px;
+    }
+
+    body {
+        background-color: var(--off-white);
+    }
+  
+
+    .hero {
+        background-color: var(--off-white);
+        height: 90vh;
+        background-image: url('/images/renes-background-horizontal.png'); 
+        /* ^changed */
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10vh;
+        
+    }
+
+    .textbox {
+        background-color: var(--off-white);
+        height: 60vh;
+        /* ^ changed */
+        width: 80vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5%;
+    }
+
+    .hero p {
+         font-family: 'Josefin';
+         text-align: center;
+         font-size: 22px;
+         color: var(--brownie);
+    }
+
+    .menu-pastries {
+        background-color: var(--off-white);
+    }
+
+    hr {
+        margin-top: -18px;
+        margin-bottom: 27px;
+        background-color: var(--brownie);
+        border: none;
+        height: 1px;
+    }
+
+    .section-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-bottom: 3vh;
+    }
+
+    .section-title h1 {
+        letter-spacing: 3.6px;
+    }
+
+    .menu-items {
+        margin-bottom: 36px;
+    }
+    .menu-item {
+        margin-bottom: 16px;
+        display: flex;
+    }
+
+    .sub-header {
+        margin-top: 12%;
+    }
+
+    .dots {
+    flex-grow: 1;
+    border-bottom: 1px dotted #999;
+    margin: 0 5px;
+    position: relative;
+    bottom: 5px;
+    }
+    
+
+   
+
+   
+
+    section {
+        padding: 20%;
+        background-color: var(--off-white);
+    }
+
+    .cakes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+    }
+
+    .cakes p {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: var(--secondary-brwn);
+        line-height: 1.5rem;
+        width: 60vw;
+    }
+
+    .anna {
+        margin-top: 5%;
+        font-size: 28px;
+
+    }
+
+    h6 {
+        font-size: 24px;
+        font-family: 'Josefin';
+        color: var(--secondary-brwn);
+    }
+
+    footer {
+        background-color: var(--secondary-brwn);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 8%;
+        padding-top: 15%;
+        color: var(--off-white);
+    }
+
+    h5 {
+        font-family: "Josefin";
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 5vh;
+    }
+
+    .day {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60vw;
+        font-family: 'Josefin';
+        font-size: 20px;
+    }
+    
+    .hours {
+        text-align: center;
+        width: 100px;
+    }
+
+    .shop-hours {
+        margin-bottom: 5vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .logo-footer {
+        width: 30vw;
+        margin:  0 auto;
+    }
+
+
+
+    .phone {
+        margin-bottom: 15vh;
+    }
+
+    .notices {
+        display: flex;
+        justify-content: space-between;
+        width: 90vw;
+        margin-bottom: -35px;
+    }
+
+    .notices p {
+        
+        font-size: 14px;
+    }
+
+    .credit {
+        color: var(--accent-yellow);
+    }
+
+   }
+
+
+   
