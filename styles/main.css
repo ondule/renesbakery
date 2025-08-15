@@ -141,7 +141,7 @@
     .hero {
         background-color: var(--off-white);
         height: 90vh;
-        background-image: url('/images/renes-background-small.png');
+        background-image: url('images/renes-background-small.png');
         background-position: center;
         background-size: cover;
         display: flex;
