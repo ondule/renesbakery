@@ -393,7 +393,7 @@
     .hero {
         background-color: var(--off-white);
         height: 90vh;
-        background-image: url('/images/renes-background-horizontal.png'); 
+        background-image: url('../images/renes-background-horizontal.png'); 
         /* ^changed */
         background-position: center;
         background-size: cover;
