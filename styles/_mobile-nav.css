@@ -13,19 +13,19 @@
             top: 10px;
             right: 20px;
             z-index: 302;
-            opacity: 0;
+            opacity: 0 !important;
             cursor: pointer;
         }
 
         /* Hamburger positioning */
         .hamburger-lines {
-            display: block;
+            display: block !important;
             height: 26px;
             width: 32px;
             position: absolute;
             top: 17px;
             right: 20px;
-            z-index: 301;
+            z-index: 301 !important;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -70,7 +70,7 @@
 
 /* Mobile Menu Opened Styling */
 .mob-nav-container {
-    position: fixed;
+    position: fixed !important;
     top: 0;
     right: 0;
     max-width: 393px;
@@ -90,7 +90,7 @@
 
 /* Show mobile menu when checkbox is checked */
         .checkbox:checked ~ .mob-nav-container {
-            transform: translateX(0);
+            transform: translateX(0) !important;
         }
 
 .mobile-nav {
