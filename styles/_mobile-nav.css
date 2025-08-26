@@ -189,6 +189,14 @@
 
 /* Prevent scrolling when menu is open */
 
+/* Media query to ensure mobile nav only shows on mobile */
+@media (min-width: 768px) {
+    .hamburger-lines, 
+    .checkbox,
+    .mob-nav-container {
+        display: none !important;
+    }
+
 
 
 
