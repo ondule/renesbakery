@@ -1,3 +1,6 @@
+/* STYLES FOR RENE'S BAKERY AND DELI, UPDATED 8/25/25 BY JAM-DESIGNS.COM */
+
+/* Boiler Plate */
 * {
     margin: 0;
     padding: 0;
@@ -33,22 +36,23 @@
     color: inherit;
   }
 
-  /*///////////////////////// END BOILERPLATE ///////////////////////*/
 
 
 
 
-  /*///////////////////////// FONTS ///////////////////////*/
+
+
+  /*/////////////////// Fonts ///////////////////////*/
 @font-face {
     font-family: 'Kannada';
-    src: url('../fonts/Kannada_MN/KannadaMN-01.ttf');
+    src: url('/fonts/Kannada_MN/KannadaMN-01.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Josefin';
-    src: url('../fonts/Josefin_Slab/JosefinSlab-VariableFont_wght.ttf'),
+    src: url('/fonts/Josefin_Slab/JosefinSlab-VariableFont_wght.ttf'),
     url('/fonts/Kannada_MN/KannadaMN-Bold-02.ttf'); 
     font-weight: normal;
     font-style: normal;
@@ -56,19 +60,19 @@
 
 @font-face {
     font-family: 'Bodoni';
-    src: url('../fonts/Bodoni_Moda/BodoniModa-VariableFont_opsz\,wght.ttf');
+    src: url('/fonts/Bodoni_Moda/BodoniModa-VariableFont_opsz\,wght.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Lovelace";
-    src: url('../fonts/Lovelace/Zetafonts\ -\ Lovelace\ Text\ Regular.otf');
+    src: url('/fonts/Lovelace/Zetafonts\ -\ Lovelace\ Text\ Regular.otf');
     font-weight: normal;
     font-display: swap;
 }
 
-  /*///////////////////////// VARIABLES ///////////////////////*/
+  /*//////////////// Colors ///////////////////////*/
 
   :root {
  
@@ -86,7 +90,9 @@
 
 
 
-    /*///////////////////////// BEGIN STYLING ///////////////////////*/
+    /*///////////////// BEGIN MAIN STYLING///////////*/
+
+    /* Mobile styles are set to default, to overwrite use desktop media query  */
 
     body {
         background-color: var(--off-white);
@@ -108,6 +114,10 @@
         margin-top: -40px;
         font-size: 11px;
         font-weight: 80;
+    }
+
+    .tagline {
+        text-align: center;
     }
 
     .logo {
@@ -158,13 +168,16 @@
         background-color: var(--off-white);
     }
 
+    /*  MOBILE MENU NAV */
+    
+
     
   
 /*/////////////// BEGIN HERO//////////////*/
     .hero {
         background-color: var(--off-white);
         height: 90vh;
-        background-image: url('../images/renes-background-small.png');
+        background-image: url('/images/renes-background-small.png');
         background-position: center;
         background-size: cover;
         display: flex;
@@ -509,6 +522,10 @@
     display: none;
   }
 
+    .hamburger-lines, .checkbox {
+                display: none;
+            }
+
   .vert-line {
         background-color: #FBF7EF;
         height: 60vh;
@@ -582,7 +599,7 @@
 
     .hero {
         height: 90vh;
-        background-image: url('../images/renes-background-horizontal.png'); 
+        background-image: url('/images/renes-background-horizontal.png'); 
         /* ^changed */
        
         

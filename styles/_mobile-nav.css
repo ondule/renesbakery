@@ -1,0 +1,197 @@
+
+        /* Desktop Nav - hidden on mobile */
+        /* .desktop-nav {
+            display: none;
+        } */
+
+        /* Checkbox - Hidden but clickable */
+        .checkbox {
+            position: absolute;
+            display: block;
+            height: 50px;
+            width: 50px;
+            top: 10px;
+            right: 20px;
+            z-index: 302;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        /* Hamburger positioning */
+        .hamburger-lines {
+            display: block;
+            height: 26px;
+            width: 32px;
+            position: absolute;
+            top: 17px;
+            right: 20px;
+            z-index: 301;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            /* background-color: aqua; */
+        }
+
+        .hamburger-lines .line {
+            display: block;
+            height: 4.2px;
+            width: 100%;
+            background: #fff;
+            border-radius: 1.5px;
+        }
+
+        /* Hamburger Line animations */
+        .hamburger-lines .line1 {
+            transform-origin: 0% 0%;
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .hamburger-lines .line2 {
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .hamburger-lines .line3 {
+            transform-origin: 0% 100%;
+            transition: transform 0.4s ease-in-out;
+        }
+
+        /* Transform hamburger to X when checked */
+        .checkbox:checked ~ .hamburger-lines .line1 {
+            transform: rotate(45deg);
+        }
+
+        .checkbox:checked ~ .hamburger-lines .line2 {
+            transform: scaleY(0);
+        }
+
+        .checkbox:checked ~ .hamburger-lines .line3 {
+            transform: rotate(-45deg);
+        }
+
+/* Mobile Menu Opened Styling */
+.mob-nav-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    max-width: 393px;
+    background-image: url(/images/renes-background-brown.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+     z-index: 300;
+    /* Initially hidden */
+     transform: translateX(100%);
+     transition: transform 0.5s ease-in-out;
+}
+
+/* Show mobile menu when checkbox is checked */
+        .checkbox:checked ~ .mob-nav-container {
+            transform: translateX(0);
+        }
+
+.mobile-nav {
+    background: #782D40;
+    opacity: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 85%;
+    padding: 0 2%;
+    height: 100vh;
+}
+
+.m-nav-logo {
+    margin-top: 4vw;
+    width: 80%;
+    margin-bottom: 5rem;
+}
+
+.mob-nav-container h4 {
+    font-family: 'Lovelace';
+}
+
+.mob-nav-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80%;
+}
+
+.mob-nav-container a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 1rem;
+    font-family: 'Kannada';
+    cursor: pointer;
+    letter-spacing: 1.6px;
+    border-bottom: 3px solid transparent;
+    width: fit-content;
+    transition: all 0.3s ease;
+}
+
+.mob-nav-items a:hover {
+    border-bottom: 3px solid white;
+    font-weight: 700;
+    color: burlywood;
+}
+
+
+.mob-nav-footer {
+    text-decoration: none;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+}
+
+
+
+.mob-nav-footer .mob-address {
+    text-decoration: none;
+    color: wheat;
+    font-family: 'Lovelace';
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.mob-nav-footer .mob-telephone {
+    text-decoration: none;
+    color: bisque;
+    font-family: 'Josefin';
+    font-size: 24px;
+    margin-bottom: 1rem;
+    font-weight: 900;
+   
+}
+
+.mob-nav-footer .mob-cta {
+    text-decoration: none;
+    font-family: 'Lovelace';
+    color: wheat;
+    display: flex;
+    font-size: 1.25rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.mob-cta img {
+    margin-left: 1rem;
+    margin-bottom: 5px;
+}
+
+/* Prevent scrolling when menu is open */
+
+
+
+
+
+
+
