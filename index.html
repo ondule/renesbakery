@@ -1,24 +1,48 @@
 <!DOCTYPE html>
+<!-- WEBSITE FOR RENE'S BAKERY AND DELI -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/_mobile-nav.css">
     <link rel="stylesheet" href="styles/main.css">
+    
     <title>Rene's Bakery and Deli</title>
 </head>
 <body>
     <header>
         
         <!-- Logo -->
-        <img class="logo" src="./images/renes-logo-white-transparent.png" alt="Logo for Rene's Bakery and Deli">
-        <!-- Hamburger -->
-        <!-- <input class="checkbox" type="checkbox" name="" id="" />
-                <div class="hamburger-lines">
-                  <span class="line line1"></span>
-                  <span class="line line2"></span>
-                  <span class="line line3"></span>
-                </div> -->
+        <img class="logo" src="images/renes-logo-white-transparent.png" alt="Logo for Rene's Bakery and Deli">
+         <!-- Hamburger Checkbox -->
+        <input class="checkbox" type="checkbox" id="mobile-menu-toggle" />
+        
+        <!-- Hamburger Lines -->
+        <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </div>
+        
         <!-- Mobile Menu -->
+          <div class="mob-nav-container">
+        <div class="mobile-nav">
+                <img class="m-nav-logo" src="/images/logo/Logo-w-croissant-sub.png" alt="">
+            
+            <div class="mob-nav-items">
+                <a href="#croissants">CROISSANTS</a>
+                <a href="#pastries">PASTRIES</a>
+                <a href="#breads">BREADS</a>
+            </div>
+
+            <div class="mob-nav-footer">
+                <a href="https://maps.google.com/?q=6524+N.+Cornell+Ave+Indianapolis,+IN+46220" class="mob-address" target="_blank">6524 N. Cornell Ave.
+                Indianapolis, IN  46220</a>
+                <a href="tel:+13172512253" target="_blank" class="mob-telephone">(317) 251-2253</a>
+                <a href="https://www.instagram.com/renes_bakery/?hl=en" class="mob-cta" target="_blank">Follow Us!<img src="/images/instagram-logo_popout.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
            
         <!-- Desktop Menu -->
         <nav class="desktop-nav">
@@ -31,18 +55,20 @@
         </h4>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero">
         
         <div class="textbox">
             <h1>Welcome to Rene’s Bakery & Deli</h1>
-            <h2>check out our current pastry and bread offerings below. <br><br>
+            <h2>Check out our current pastry and bread offerings below. <br><br>
             
-            Deli Coming Soon!
+            Deli coming soon!
 
             </h2>
         </div>
     </section>
 
+    <!-- MENU: Pastry Section -->
     <section class="menu-section">
 
          <div class="section-title">
@@ -50,7 +76,7 @@
         <div class="horizontal-line"></div>
         </div>
         
-         
+    <!-- MENU: Croissant Sub Section -->
         <div class="sub-header">
             <h2 id="croissants">Croissants</h2> 
             <hr class="h2-underline">
@@ -128,7 +154,7 @@
                 <span class="item-price">$2.60</span> -->
 
             
-
+            <!-- MENU:Pastries & More Sub Section  -->
             <div class="sub-header more-sub">
                 <h2 id="pastries">Pastries & More</h2>
                 <hr>
@@ -167,11 +193,11 @@
                 <span class="item-price">$6.24</span>
                 </div>
 
-                <div class="menu-item">
+                <!-- <div class="menu-item">
                 <span class="item-name">COFFEE CAKE</span>
                 <span class="dots"></span>
                 <span class="item-price">$7.82</span>
-                </div>
+                </div> -->
 
                 <div class="menu-item">
                 <span class="item-name">*FRUIT DANISH</span>
@@ -204,6 +230,7 @@
             <p class="note">Items marked with an *asterisk may only be available Fri-Sun. Please call ahead to ensure availability</p>
         
     </section>
+    <!-- MENU: Bread Section -->
     <section class="menu-section breads">
          <div id="breads" class="section-title">
             <h1>BREADS</h1>
@@ -332,7 +359,7 @@
 
     <footer id="hours">
     <div class="footer-left">
-            <img class="logo-footer" src="./images/renes-logo-white-transparent-edit.png" alt="" srcset="">
+            <img class="logo-footer" src="/images/renes-logo-white-transparent-edit.png" alt="" srcset="">
             
      
         <div class="logo-line-foot"></div>
@@ -428,5 +455,34 @@
     <div class="notices">
         <p class="copyright">&#169; Rene's Bakery & Deli 2025</p>
         </div>
+
+ <script>
+    const checkbox = document.getElementById('mobile-menu-toggle');
+        
+        // Function to handle body scroll
+        function toggleBodyScroll(disable) {
+            if (disable) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        }
+        
+        // Close menu when clicking on navigation links
+        document.querySelectorAll('.mob-nav-items a').forEach(link => {
+            link.addEventListener('click', () => {
+                checkbox.checked = false;
+                // Explicitly re-enable scrolling
+                toggleBodyScroll(false);
+            });
+        });
+
+        // Prevent body scroll when menu is open
+        checkbox.addEventListener('change', function() {
+            toggleBodyScroll(this.checked);
+        });
+
+
+ </script>
 </body>
 </html>
