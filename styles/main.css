@@ -45,14 +45,14 @@
   /*/////////////////// Fonts ///////////////////////*/
 @font-face {
     font-family: 'Kannada';
-    src: url('/fonts/Kannada_MN/KannadaMN-01.ttf');
+    src: url('./fonts/Kannada_MN/KannadaMN-01.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Josefin';
-    src: url('/fonts/Josefin_Slab/JosefinSlab-VariableFont_wght.ttf'),
+    src: url('./fonts/Josefin_Slab/JosefinSlab-VariableFont_wght.ttf'),
     url('/fonts/Kannada_MN/KannadaMN-Bold-02.ttf'); 
     font-weight: normal;
     font-style: normal;
@@ -60,14 +60,14 @@
 
 @font-face {
     font-family: 'Bodoni';
-    src: url('/fonts/Bodoni_Moda/BodoniModa-VariableFont_opsz\,wght.ttf');
+    src: url('./fonts/Bodoni_Moda/BodoniModa-VariableFont_opsz\,wght.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Lovelace";
-    src: url('/fonts/Lovelace/Zetafonts\ -\ Lovelace\ Text\ Regular.otf');
+    src: url('./fonts/Lovelace/Zetafonts\ -\ Lovelace\ Text\ Regular.otf');
     font-weight: normal;
     font-display: swap;
 }
@@ -177,7 +177,7 @@
     .hero {
         background-color: var(--off-white);
         height: 90vh;
-        background-image: url('/images/renes-background-small.png');
+        background-image: url('./images/renes-background-small.png');
         background-position: center;
         background-size: cover;
         display: flex;
@@ -599,7 +599,7 @@
 
     .hero {
         height: 90vh;
-        background-image: url('/images/renes-background-horizontal.png'); 
+        background-image: url('./images/renes-background-horizontal.png'); 
         /* ^changed */
        
         
