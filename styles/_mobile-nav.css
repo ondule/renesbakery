@@ -74,7 +74,7 @@
     top: 0;
     right: 0;
     max-width: 393px;
-    background-image: url(/images/renes-background-brown.png);
+    background-image: url(../images/renes-background-brown.png);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
