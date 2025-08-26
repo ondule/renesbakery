@@ -45,29 +45,29 @@
   /*/////////////////// Fonts ///////////////////////*/
 @font-face {
     font-family: 'Kannada';
-    src: url('./fonts/Kannada_MN/KannadaMN-01.ttf');
+    src: url('../fonts/Kannada_MN/KannadaMN-01.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Josefin';
-    src: url('./fonts/Josefin_Slab/JosefinSlab-VariableFont_wght.ttf'),
-    url('/fonts/Kannada_MN/KannadaMN-Bold-02.ttf'); 
+    src: url('../fonts/Josefin_Slab/JosefinSlab-VariableFont_wght.ttf'),
+    url('../fonts/Josefin_Slab/JosefinSlab-VariableFont_wght.ttf'); 
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Bodoni';
-    src: url('./fonts/Bodoni_Moda/BodoniModa-VariableFont_opsz\,wght.ttf');
+    src: url('../fonts/Bodoni_Moda/BodoniModa-VariableFont_opsz\,wght.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Lovelace";
-    src: url('./fonts/Lovelace/Zetafonts\ -\ Lovelace\ Text\ Regular.otf');
+    src: url('../fonts/Lovelace/Zetafonts\ -\ Lovelace\ Text\ Regular.otf');
     font-weight: normal;
     font-display: swap;
 }
