@@ -154,7 +154,7 @@
 
 
 
-.mob-nav-footer .mob-address {
+.mob-nav-footer .mob-address a {
     text-decoration: none;
     color: wheat;
     font-family: 'Lovelace';
@@ -163,7 +163,7 @@
     margin-bottom: 1rem;
 }
 
-.mob-nav-footer .mob-telephone {
+.mob-nav-footer .mob-telephone a {
     text-decoration: none;
     color: bisque;
     font-family: 'Josefin';
@@ -173,7 +173,7 @@
    
 }
 
-.mob-nav-footer .mob-cta {
+.mob-nav-footer .mob-cta a {
     text-decoration: none;
     font-family: 'Lovelace';
     color: wheat;
