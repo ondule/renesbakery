@@ -94,6 +94,10 @@
             transform: translateX(0) !important;
         }
 
+        .checkbox:checked ~ .mobile-nav {
+            transform: translateX(0) !important;
+        }
+
 .mobile-nav {
     background: #782D40;
     opacity: 95%;
@@ -106,14 +110,10 @@
     height: 100vh;
 }
 
-.mob-nav-container .m-nav-logo {
+.m-nav-logo {
     margin-top: 4vw;
     width: 80%;
     margin-bottom: 5rem;
-}
-
-.mob-nav-container h4 {
-    font-family: 'Lovelace';
 }
 
 .mob-nav-items {
@@ -154,7 +154,7 @@
 
 
 
-.mob-nav-footer .mob-address a {
+.mob-address  {
     text-decoration: none;
     color: wheat;
     font-family: 'Lovelace';
@@ -163,7 +163,7 @@
     margin-bottom: 1rem;
 }
 
-.mob-nav-footer .mob-telephone a {
+.mob-telephone  {
     text-decoration: none;
     color: bisque;
     font-family: 'Josefin';
@@ -173,7 +173,7 @@
    
 }
 
-.mob-nav-footer .mob-cta a {
+.mob-cta  {
     text-decoration: none;
     font-family: 'Lovelace';
     color: wheat;
