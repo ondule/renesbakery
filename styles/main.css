@@ -463,6 +463,10 @@
     display: none;
 }
 
+.logo-desktop {
+    display: none;
+}
+
 .mobile-only {
   display: block;
 }
@@ -515,6 +519,16 @@
   .mobile-only {
     display: none;
   }
+    .logo {
+    display: none;
+}
+
+  .logo-desktop {
+    display: block;
+    height: auto;
+    max-width: 300px;
+    margin-bottom: -10px;
+}
 
     .hamburger-lines, .checkbox {
                 display: none;
@@ -537,7 +551,7 @@
         flex-direction: row;
         justify-content: flex-start;
         justify-content: space-between;
-        height: 20%;
+        height: 15%;
         padding-left: 3%;
         /* ^ changed entire section */
      }
@@ -564,6 +578,7 @@
         text-decoration: none;
         color: var(--off-white);
         font-size: 1.25rem;
+        font-size: clamp(1rem, 2vw, 1.25rem);
         margin-top: 2rem;
         font-weight: 500;
         font-family: 'Kannada';
