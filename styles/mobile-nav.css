@@ -99,7 +99,7 @@
         }
 
 .mobile-nav {
-    background: #782D40;
+    background: var(--burgandy);
     opacity: 95%;
     display: flex;
     flex-direction: column;
@@ -139,13 +139,14 @@
 .mob-nav-items a:hover {
     border-bottom: 3px solid white;
     font-weight: 700;
-    color: burlywood;
+    color: var(--accent-yellow);
+    cursor: pointer;
 }
 
 
 .mob-nav-footer {
     text-decoration: none;
-    color: wheat;
+    color: var(--accent-yellow);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,7 +157,7 @@
 
 .mob-address  {
     text-decoration: none;
-    color: wheat;
+    color: var(--cream);
     font-family: 'Lovelace';
     font-size: 1.25rem;
     text-align: center;
@@ -165,7 +166,7 @@
 
 .mob-telephone  {
     text-decoration: none;
-    color: bisque;
+    color: var(--cream);
     font-family: 'Josefin';
     font-size: 24px;
     margin-bottom: 1rem;
@@ -176,7 +177,7 @@
 .mob-cta  {
     text-decoration: none;
     font-family: 'Lovelace';
-    color: wheat;
+    color: var(--cream);
     display: flex;
     font-size: 1.25rem;
     align-items: center;
@@ -186,6 +187,11 @@
 .mob-cta img {
     margin-left: 1rem;
     margin-bottom: 5px;
+}
+
+.mob-nav-footer a:hover {
+    color: var(--accent-yellow);
+    cursor: pointer;
 }
 
 /* Prevent scrolling when menu is open */
