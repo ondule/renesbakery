@@ -138,9 +138,10 @@
 
 .mob-nav-items a:hover {
     border-bottom: 3px solid white;
-    font-weight: 700;
+    font-weight: -100;
     color: var(--accent-yellow);
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 
@@ -153,6 +154,9 @@
     margin-top: 200px;
 }
 
+.mob-nav-footer a {
+    transition: all 0.3s ease;
+}
 
 
 .mob-address  {
