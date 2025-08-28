@@ -34,7 +34,7 @@
 
         .hamburger-lines .line {
             display: block;
-            height: 4px;
+            height: 4.5px;
             margin-bottom: 6px;
             width: 100%;
             background: #fff;
@@ -111,7 +111,7 @@
 }
 
 .m-nav-logo {
-    margin-top: 4vw;
+    margin-top: 8vw;
     width: 80%;
     margin-bottom: 5rem;
 }
@@ -151,7 +151,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 25vh;
 }
 
 .mob-nav-footer a {

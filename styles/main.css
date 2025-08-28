@@ -216,6 +216,10 @@
          margin-top: .5rem;
     }
 
+    .hero .welcome-text {
+        margin-top: 1rem;
+    }
+
      .hero .deli-soon {
         margin-top: 1rem;
         letter-spacing: -1px;
