@@ -187,15 +187,15 @@
     }
 
     .textbox {
-        background-color: var(--off-white);
-        height: 70vw;
+        background-color: #fbf2f2;
+        height: auto;
         width: 80vw;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 5%;
-        padding-top: 1rem;
+        padding: 25px;
+        padding-top: 50px;
         border-radius: 25px;
         border: 5px solid #782D40;
 
@@ -224,7 +224,7 @@
          font-weight: 200;
          text-align: center;
          font-size: clamp(1rem, 1px + 2vw, 2rem); 
-         color: var(--burgandy);
+         color: var(--text-dark);
     }
 
     .hero strong {
@@ -662,7 +662,7 @@
     }
 
     .textbox {
-        background-color: var(--off-white);
+        background-color: #fbf2f2;;
         height: 60vh;
         /* ^ changed */
         width: 80vw;
