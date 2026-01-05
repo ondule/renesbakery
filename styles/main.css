@@ -189,6 +189,7 @@
     .textbox {
         background-color: #fbf2f2;
         height: auto;
+        min-height: 400px;
         width: 80vw;
         display: flex;
         flex-direction: column;
