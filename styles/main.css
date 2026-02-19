@@ -151,6 +151,12 @@
         color: var(--text-dark);
     }
 
+    h3 {
+        font-family: 'Josefin';
+        color: var(--rene-blue);
+        font-size: 1.2  rem;
+    }
+                
     p {
         font-family: "Josefin";
     }
