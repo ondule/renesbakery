@@ -77,10 +77,36 @@
     font-display: swap;
 }
 
-  /*//////////////// Colors ///////////////////////*/
+@font-face {
+    font-family: 'Clash';
+    src: url('../fonts/Clash_Display/ClashDisplay-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kalnia';
+    src: url('../fonts/Kalnia/Kalnia-VariableFont_wdth\,wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira';
+    src: url('../fonts/Fira_Code/FiraCode-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+  
 
   :root {
- 
+    /* --- COLOR PALETTE -- */
+
     --rene-blue: #166AC5;
     --off-white: #FBF7EF;
     --cream: #FFF3DE    ;
@@ -90,6 +116,13 @@
     --text-dark: #3a2115;
     --text-light: #FBF7EF;
     --burgandy: #722F40;
+
+    /* --- TYPOGRAPHY -- */
+    
+    --font-display: 'Kalnia';
+    --font-primary: 'Clash';
+    --font-secondary: 'Fira';
+
   }
 
   #menu-ending {
@@ -142,23 +175,43 @@
 
 
     h1 {
-        font-family: 'Kannada';
-        color: var(--brownie);
+        font-family: var(--font-display);
+        color: var(--burgandy);
         text-align: center;
-        font-weight: 100;
-        
-        
+    }
+     /*  */
+     .section-title h1 {
+        letter-spacing: 5%;
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-weight: 600;
     }
 
+ 
+
     h2 {
-        font-family: 'Josefin';
+        font-family: var(--font-primary);
         color: var(--text-dark);
+        letter-spacing: 10%;
+        font-weight: 100;
+        color: var(--rene-blue);
     }
+
+   
 
     h3 {
         font-family: 'Josefin';
-        color: var(--rene-blue);
+        color: var(--brownie);
         font-size: 1.2  rem;
+    }
+
+    .hero h3 {
+        color: var(--rene-blue);
+    }
+
+    .sandwich-type h3 {
+        font-family: var(--font-secondary);
+        font-weight: 200;
     }
                 
     p {
@@ -166,7 +219,7 @@
     }
 
     .menu-items {
-        font-family: 'Josefin';
+        font-family: var(--font-secondary);
         color: var(--brownie);
     }
 
@@ -179,7 +232,18 @@
 
    
 
-    
+     /* Color Accent Lines below nav */
+    .nav-accent-line {
+        background-color: var(--cream);
+        width: 100%;
+        height: 4px;
+    }
+
+    .nav-accent-line-2 {
+        background-color: var(--burgandy);
+        width: 100%;
+        height: 7px;
+    }
 
   
 /* Hero Section  */
@@ -209,21 +273,10 @@
         padding-top: 50px;
         border-radius: 25px;
         border: 5px solid #782D40;
-
-    }
-
-    .hero h1 {
-         font-family: "Plus Jakarta Sans", sans-serif;
-         font-weight: 400;
-         text-align: center;
-         font-size: clamp(1.75rem, 1px + 2.75vw, 2.5rem); 
-         color: var(--text-dark);
-    }
-
-   
+    }   
 
     .hero h1 {
-         font-family: "Plus Jakarta Sans", sans-serif;
+         font-family: "Clash", sans-serif;
          font-weight: 400;
          text-align: center;
          font-size: clamp(1.25rem, 1px + 2.75vw, 2.5rem); 
@@ -231,11 +284,12 @@
     }
 
     .hero h2 {
-         font-family: "Plus Jakarta Sans", sans-serif;
+         font-family: "Clash", sans-serif;
          font-weight: 200;
          text-align: center;
          font-size: clamp(1rem, 1px + 2vw, 2rem); 
          color: var(--text-dark);
+         letter-spacing: 5%;
     }
 
     .hero strong {
@@ -246,27 +300,12 @@
         margin-top: 1rem;
     }
 
-     .hero .deli-soon {
-        margin-top: 1rem;
-        letter-spacing: -1px;
-        font-size: clamp(1.75rem, 1px + 2.5vw, 2.5rem);
-    }
+   
 
-    /* Color Accent Lines below nav */
-    .nav-accent-line {
-        background-color: var(--cream);
-        width: 100%;
-        height: 4px;
-    }
-
-    .nav-accent-line-2 {
-        background-color: var(--burgandy);
-        width: 100%;
-        height: 7px;
-    }
+   
   
 
-    /* BEGIN PASTRY SECTION */
+
  
     section {
         padding: 5%;
@@ -275,10 +314,7 @@
     
     
 
-    .section-title h1 {
-        letter-spacing: 3.6px;
-        font-size: 3rem;
-    }
+   
 
     .menu-section {
         display: flex;
@@ -307,14 +343,14 @@
         margin-bottom: 27px;
         background-color: var(--burgandy);
         border: none;
-        height: .1rem; 
+        height: .12rem; 
         width: 80%;
     }
 
     hr {
         margin-top: -18px;
         margin-bottom: 27px;
-        background-color: var(--burgandy);
+        background-color: var(--rene-blue);
         border: none;
         height: .1rem; 
      
@@ -450,7 +486,7 @@
     }
 
     .hours-heading {
-        font-family: 'Lovelace';
+        font-family: var(--font-display);
         font-weight: 100;
         font-size: 1.75rem;
         margin-bottom: 2rem;
@@ -528,7 +564,7 @@
 }
 
 .address {
-    font-family: 'Lovelace';
+    font-family: var(--font-display);
     font-size: 1.25rem;
     margin-top: 1rem;
     margin-bottom: 1.5rem;
@@ -582,8 +618,8 @@
   .logo-desktop {
     display: block;
     height: auto;
+    width: 250px;
     max-width: 300px;
-    margin-bottom: -10px;
 }
 
     .hamburger-lines, .checkbox {
